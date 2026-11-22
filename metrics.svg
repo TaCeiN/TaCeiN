@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 132" width="100%" role="img" aria-label="Key Engineering Metrics">
+  <defs>
+    <linearGradient id="cGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0F172A"/>
+      <stop offset="100%" stop-color="#090D16"/>
+    </linearGradient>
+    <linearGradient id="barBlue" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#2563EB"/>
+      <stop offset="100%" stop-color="#38BDF8"/>
+    </linearGradient>
+    <linearGradient id="barTeal" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0D9488"/>
+      <stop offset="100%" stop-color="#2DD4BF"/>
+    </linearGradient>
+  </defs>
+
+  <style>
+    .val { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, Roboto, sans-serif; font-weight: 800; font-size: 28px; fill: #F8FAFC; letter-spacing: -0.02em; }
+    .lbl { font-family: ui-monospace, SFMono-Regular, 'JetBrains Mono', Menlo, Consolas, monospace; font-size: 11.5px; font-weight: 600; fill: #94A3B8; letter-spacing: 0.04em; }
+    .sub { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, Roboto, sans-serif; font-size: 12.5px; fill: #CBD5E1; }
+    .shimmer { animation: glow 3.4s ease-in-out infinite; }
+    .shimmer-d { animation: glow 3.4s ease-in-out 1.7s infinite; }
+    @keyframes glow { 0%, 100% { opacity: 0.95; } 50% { opacity: 0.45; } }
+  </style>
+
+  <!-- Card 1 -->
+  <g transform="translate(0, 6)">
+    <rect width="286" height="120" rx="12" fill="url(#cGrad)" stroke="#1E293B" stroke-width="1.3"/>
+    <rect class="shimmer" x="20" y="0" width="90" height="3" rx="1.5" fill="url(#barTeal)"/>
+    <text x="22" y="34" class="lbl">NDVI TIME-SERIES ML</text>
+    <text x="22" y="72" class="val">R² 0.914</text>
+    <text x="22" y="98" class="sub">RMSE 0.0638 (−34.2% vs baseline)</text>
+  </g>
+
+  <!-- Card 2 -->
+  <g transform="translate(304, 6)">
+    <rect width="286" height="120" rx="12" fill="url(#cGrad)" stroke="#1E293B" stroke-width="1.3"/>
+    <rect class="shimmer-d" x="20" y="0" width="90" height="3" rx="1.5" fill="url(#barBlue)"/>
+    <text x="22" y="34" class="lbl">LOCAL HYBRID RAG</text>
+    <text x="22" y="72" class="val">≤ 10 GB VRAM</text>
+    <text x="22" y="98" class="sub">FAISS + BM25 + Cross-Encoder</text>
+  </g>
+
+  <!-- Card 3 -->
+  <g transform="translate(608, 6)">
+    <rect width="286" height="120" rx="12" fill="url(#cGrad)" stroke="#1E293B" stroke-width="1.3"/>
+    <rect class="shimmer" x="20" y="0" width="90" height="3" rx="1.5" fill="url(#barTeal)"/>
+    <text x="22" y="34" class="lbl">HANDWRITTEN OCR</text>
+    <text x="22" y="72" class="val">~90% ACC</text>
+    <text x="22" y="98" class="sub">GLM-OCR · LoRA · ~5 000 images</text>
+  </g>
+
+  <!-- Card 4 -->
+  <g transform="translate(912, 6)">
+    <rect width="288" height="120" rx="12" fill="url(#cGrad)" stroke="#1E293B" stroke-width="1.3"/>
+    <rect class="shimmer-d" x="20" y="0" width="90" height="3" rx="1.5" fill="url(#barBlue)"/>
+    <text x="22" y="34" class="lbl">VK EDUCATION × MAX</text>
+    <text x="22" y="72" class="val">FINALIST</text>
+    <text x="22" y="98" class="sub">FastAPI · OpenAPI 3.1 · Docker</text>
+  </g>
+</svg>
